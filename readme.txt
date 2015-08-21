@@ -4,3 +4,4 @@ git has a mutable index called STGATE
 track git
 
 git tracks of change file
+create a new branch is quick
