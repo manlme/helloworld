@@ -3,7 +3,20 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        echo 'build'
+        parallel(
+          "build": {
+            echo 'build'
+            
+          },
+          "build2": {
+            echo 'build2'
+            
+          },
+          "build3": {
+            echo 'build3'
+            
+          }
+        )
       }
     }
     stage('test') {
